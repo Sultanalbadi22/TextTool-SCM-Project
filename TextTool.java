@@ -4,6 +4,7 @@
 
 package com.mycompany.texttool;
 
+
 public class TextTool {
     public static void main(String[] args) {
         System.out.println("Welcome to TextTool!");
@@ -12,9 +13,14 @@ public class TextTool {
         String sample = "Hello from TextTool";
         System.out.println("Sample text: " + sample);
         System.out.println("Character count: " + countCharacters(sample));
+        System.out.println("Word count: " + countWords(sample));
     }
 
     public static int countCharacters(String text) {
         return text.length();
+    }
+
+    public static int countWords(String text) {
+        return text.split(" ").length;
     }
 }
