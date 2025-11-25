@@ -23,4 +23,3 @@ public class TextTool {
         return new StringBuilder(text).reverse().toString();
     }
 }
-
